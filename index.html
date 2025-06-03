@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation JS Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://httpbin.org/get" method="get" id="form-label">
+        <img src="image/paper-plane.png" />
+
+        <div class="input-group">
+          <label for="fullName">Full Name:</label>
+          <input
+            required
+            name="fullName"
+            type="text"
+            id="fullName"
+            autocomplete="on"
+            placeholder="Enter your full name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="phoneNo"> Phone No: </label>
+          <input
+            type="tel"
+            name="phoneNo"
+            required
+            id="phoneNo"
+            autocomplete="on"
+            placeholder="081 6375 8989"
+            onkeyup="validatePhone()"
+          />
+          <span id="phone-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="emailId"> Email Id: </label>
+          <input
+            type="email"
+            id="emailId"
+            name="emailId"
+            autofocus
+            required
+            class="email"
+            placeholder="Enter email"
+            onkeyup="validateEmail()"
+          />
+          <span id="email-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="yourMsg" class="msg">Your Message</label>
+          <textarea
+            name="yourMsg"
+            required
+            rows="6"
+            id="yourMsg"
+            maxlength="30"
+            autocomplete="on"
+            autofocus
+            placeholder="Enter your meaasge"
+            onkeyup="validateMsg()"
+          ></textarea>
+          <span id="message-error"></span>
+        </div>
+        <button
+          class="btn"
+          type="submit"
+          id="submit"
+          onclick="return validateForm()"
+        >
+          Submit
+        </button>
+        <span id="submit-error" class="submit-msg"></span>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(40deg, #9a9aad, #2f2f8b);
+}
+
+form {
+  width: 500px;
+  min-height: 500px;
+  display: block;
+  align-items: center;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+.input-group {
+  position: relative;
+  flex-basis: 48%;
+  margin-top: 30px;
+}
+
+.input-group label {
+  font-size: 15px;
+}
+
+input {
+  width: 60%;
+  margin-left: 40px;
+  outline: 0;
+  border-bottom: 2px solid #c5c5c5ec;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 10px 10px 0;
+}
+
+.email {
+  width: 60%;
+  margin-left: 50px;
+  outline: 0;
+  border-bottom: 2px solid #c5c5c5ec;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 10px 10px 0;
+}
+
+.input-group textarea {
+  padding: 10px;
+  outline: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-left: 18px;
+}
+
+.btn {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 5px;
+  font-size: 16px;
+  background: #050550;
+  color: #fff;
+  outline: 0;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1515d4;
+}
+
+.input-group span {
+  position: absolute;
+  font-size: 15px;
+  bottom: 12px;
+  right: 17px;
+  color: red;
+}
+
+.input-group img {
+  width: 30px;
+  border: 0;
+  outline: none;
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  background: seagreen;
+}
+
+span {
+  color: red;
+}
+
+.submit-msg {
+  color: rgb(11, 211, 11);
+}
+
+img {
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #e4dfdf;
+  top: -20px;
+  right: 240px;
+}
+
+::placeholder {
+  font-size: 12px;
+  color: lightslategray;
+}
